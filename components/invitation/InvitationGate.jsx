@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 
 function EightPointStar() {
   return (
@@ -12,6 +13,8 @@ function EightPointStar() {
 
 export default function InvitationGate({ onOpen }) {
   const [opening, setOpening] = useState(false);
+  const name = useSearchParams().get('mengundang');
+
 
   const handleOpen = () => {
     setOpening(true);
@@ -151,6 +154,7 @@ export default function InvitationGate({ onOpen }) {
 
             <p className="font-cormorant italic text-sm pointer-events-none" style={{ color: '#C07A8E' }}>
               A special moment awaits
+              {name ? `Undangan untuk ${name}` : 'Kami mengundang'}
             </p>
           </motion.div>
         )}

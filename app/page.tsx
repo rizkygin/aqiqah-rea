@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import FloatingPetals from '../components/invitation/FloatingPetals';
 import HeroSection from '../components/invitation/HeroSection';
 import BirthDetails from '../components/invitation/BirthDetails';
@@ -29,7 +29,7 @@ export default function Invitation() {
 
   return (
     <div className="min-h-screen relative font-inter" style={{ background: '#FFF5F7' }}>
-      {!gateOpen && <InvitationGate onOpen={() => setGateOpen(true)} />}
+      {!gateOpen && <Suspense><InvitationGate onOpen={() => setGateOpen(true)} /></Suspense>}
       <FloatingPetals />
       <div className="relative z-10">
         <HeroSection heroImage={HERO_IMAGE} />
