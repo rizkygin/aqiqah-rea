@@ -21,7 +21,7 @@ export default function SunnahSection() {
                 <div className="flex items-center justify-center gap-2 mt-8 text-muted-foreground">
 
                     <p className="font-body text-xs uppercase tracking-widest">
-                        Semoga menjadi anak yang sholeh dan berbakti kepada orang tua
+                        Semoga menjadi anak yang sholehah dan berbakti kepada orang tua
                     </p>
                 </div>
             </motion.div>

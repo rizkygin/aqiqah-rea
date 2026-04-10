@@ -40,7 +40,7 @@ export default function Gallery({ images }) {
         transition={{ delay: 0.2, duration: 0.8 }}
         className="font-inter text-sm text-center text-muted-foreground mb-16 max-w-md mx-auto"
       >
-        A glimpse into Rearunika's first beautiful days
+        A glimpse into Rhea's first beautiful days
       </motion.p>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">

@@ -33,7 +33,7 @@ export default function InvitationFooter() {
         </div>
 
         <p className="font-inter text-xs text-muted-foreground/50">
-          Aqiqah Celebration of Rhea Arunika Humairoh — 2026 ♥️
+          Aqiqah Celebration of Rhea Arunika Humaira — 2026 ♥️
         </p>
       </motion.div>
     </footer>
