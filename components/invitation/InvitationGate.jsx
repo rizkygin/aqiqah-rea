@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
+import { isMobile, BrowserView, MobileView } from 'react-device-detect';
+
 
 function EightPointStar() {
   return (
@@ -14,12 +16,19 @@ function EightPointStar() {
 export default function InvitationGate({ onOpen }) {
   const [opening, setOpening] = useState(false);
   const name = useSearchParams().get('mengundang');
-
+  const [y, setY] = useState(0);
 
   const handleOpen = () => {
     setOpening(true);
     setTimeout(() => onOpen(), 1500);
   };
+  useEffect(() => {
+    if (isMobile) {
+      setY(220);
+    } else {
+      setY(0);
+    }
+  }, []);
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden">
@@ -119,16 +128,17 @@ export default function InvitationGate({ onOpen }) {
       {/* Center CTA — only visible when not opening */}
       <AnimatePresence>
         {!opening && (
+
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: y }}
             exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ delay: 0.4, duration: 0.7 }}
+            transition={{ delay: 0.4, duration: 1.2 }}
             className="absolute inset-0 flex flex-col items-center justify-center gap-5 pointer-events-none z-10"
           >
             {/* Heart medallion */}
             <div
-              className="w-20 h-20 rounded-full flex items-center justify-center pointer-events-auto"
+              className="w-20 h-20 rounded-full flex items-center justify-center pointer-events-auto md:my-10"
               style={{
                 background: 'white',
                 boxShadow: '0 4px 24px rgba(225,151,171,0.35)',
