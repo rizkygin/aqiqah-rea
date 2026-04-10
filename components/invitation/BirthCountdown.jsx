@@ -42,7 +42,7 @@ export default function BirthCountdown({ birthDate }) {
     return (
         <div className="text-center">
             <p className="font-script text-xl text-primary mb-6">
-                Umur Rea Sekarang
+                Umur Rhea Sekarang
             </p>
             <div className="flex justify-center gap-3 md:gap-6">
                 <CounterBox value={time.days} label="Hari" />
