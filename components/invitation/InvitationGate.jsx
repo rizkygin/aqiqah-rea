@@ -56,7 +56,7 @@ export default function InvitationGate({ onOpen }) {
             Undangan
           </p>
           <p className="font-cormorant italic font-light leading-none" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: '#4A2C2C' }}>
-            Rhea Arunika <br />Humairoh
+            Rhea Arunika <br />Humaira
           </p>
         </div>
 

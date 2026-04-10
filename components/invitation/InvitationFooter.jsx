@@ -23,7 +23,7 @@ export default function InvitationFooter() {
           With love and gratitude
         </p>
         <p className="font-inter text-sm text-muted-foreground mb-8">
-          Keluarga besar yang berbahagia Putra Pratanggapati dan Reni Appriliani
+          Keluarga besar yang berbahagia Putra Pratanggapati dan Reny Apriliani
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-6">
