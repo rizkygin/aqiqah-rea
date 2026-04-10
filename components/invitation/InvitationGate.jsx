@@ -152,13 +152,13 @@ export default function InvitationGate({ onOpen }) {
               Buka Undangan
             </motion.button>
 
-            <p className="font-cormorant italic text-sm pointer-events-none" style={{ color: '#C07A8E' }}>
-              A special moment awaits
+            <p className="font-cormorant italic text-sm pointer-events-none text-center" style={{ color: '#C07A8E' }}>
+              A special moment awaits<br />
               {name ? `Undangan untuk ${name}` : 'Kami mengundang'}
             </p>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </div >
   );
 }
