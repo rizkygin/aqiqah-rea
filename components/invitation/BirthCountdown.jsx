@@ -44,7 +44,7 @@ export default function BirthCountdown({ birthDate }) {
             <p className="font-script text-xl text-primary mb-6">
                 Umur Rhea Sekarang
             </p>
-            <div className="flex justify-center gap-3 md:gap-6">
+            <div className="flex justify-center gap-1 md:gap-6 mx-10">
                 <CounterBox value={time.days} label="Hari" />
                 <div className="flex items-center text-2xl text-primary/40 font-heading mt-[-20px]">:</div>
                 <CounterBox value={time.hours} label="Jam" />
