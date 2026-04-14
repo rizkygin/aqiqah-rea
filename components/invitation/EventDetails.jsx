@@ -59,8 +59,8 @@ export default function EventDetails({ onOpenRsvp }) {
               <Clock className="w-5 h-5 text-foreground" />
             </div>
             <div>
-              <p className="font-cormorant text-2xl text-foreground">11:00 AM</p>
-              <p className="font-inter text-xs text-muted-foreground mt-1">Until finished</p>
+              <p className="font-cormorant text-2xl text-foreground">08:00 WIB</p>
+              <p className="font-inter text-xs text-muted-foreground mt-1">15:00 WIB</p>
             </div>
           </div>
 
