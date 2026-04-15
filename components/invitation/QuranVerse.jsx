@@ -66,7 +66,7 @@ export default function QuranVerse() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="font-cormorant italic text-lg md:text-xl text-muted-foreground"
         >
-          May little Rearunika be the comfort of our eyes, a blessing in this world and the next.
+          May little Rhea Arunika Humaira be the comfort of our eyes, a blessing in this world and the next.
         </motion.p>
       </motion.div>
 
